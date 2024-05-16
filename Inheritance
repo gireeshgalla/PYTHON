@@ -1,0 +1,77 @@
+'''
+Single inheritance
+multilevel inheritance
+Multiple inheritance
+Hierachical inheritance
+
+'''
+
+'''
+                   # Single Inheritance
+class parent():
+    def output(self):
+        print("i am the parent")
+class child(parent):
+    def outputc(self):
+        print("i am the child")
+c=child()
+c.outputc() #child method
+c.output()  #parent method
+
+'''
+
+'''
+                           #Multi-level inheritance
+class Grandfather():
+    def outputgf(self):
+        print("i am the Grand father")
+class parent(Grandfather):
+    def output(self):
+        print("i am the parent")
+class child(parent):
+    def outputc(self):
+        print("i am the child")
+c=child()
+c.outputc()    #child method
+c.output()     #parent method
+c.outputgf()
+
+'''
+
+
+
+
+                 #Multiple Inheritance
+
+class father():
+    def outputgf(self):
+        print("i am the grandfather")
+class mother():
+    def output(self):
+        print("i am the parent")
+class child(father,mother):
+    def outputc(self):
+        print("i am the child")
+c=child()
+c.outputc()
+c.output()
+c.outputgf()
+
+
+                      #Hierachical inheritance
+
+class father():
+    def outputgf(self):
+        print("i am the father")
+class child1(father):
+    def output(self):
+        print("i am the child1")
+class child2(father):
+    def output(self):
+        print("i am the child2")
+c=child1()
+c2=child2
+c.output()
+c.outputgf()
+c2.outputc()
+c2.outputgf()  
